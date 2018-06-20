@@ -1,0 +1,93 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+a, a:hover {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+footer a:hover {
+    color: #99cb50;
+}
+header{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.bd-sidebar {
+   
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(100vh - 4rem);
+    -ms-flex-order: 0;
+    order: 0;
+   
+    transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+    flex-basis: 20vw;
+}
+.bd-content{
+    flex-basis: 80vw;
+    transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+    max-width: 79%;
+}
+.transformX{
+    flex-basis: 0vw;
+    transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+}
+.fa-arrow-right{
+    transform: rotateZ(-180deg);
+    transition: all .25s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+}
+
+.fa-bars {
+    transition: all .25s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+}
+.navbar-brand img {
+    width: 20vw;
+}
+.toggler {
+    background: #99cb50;
+    padding: 15px !important;
+    width: 50px;
+    margin-right: 10px;
+}
+.toggler i {
+    color:#fff;
+}
+.top-search .btn {
+    background-color: #99cb50 !important;
+    color: #fff;
+}
+.top-search input {
+   width: 170px !important;
+   -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+   transition: all .5s ease;
+   border: 1px solid #eeeeee;
+}
+.form-control:focus {
+    box-shadow: none;
+
+}
+.top-search input:focus {
+   width: 300px !important;
+   border: 1px solid #99cb50;
+}
+.bd-toc-item {
+    padding: 10px 4px;
+}
+.bd-toc-item:hover {
+    background: #eee;
+}
+.bd-toc-item i {
+    color: var(--gray);
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+span{
+    transition: all .5s ease;
+}
+
+    
