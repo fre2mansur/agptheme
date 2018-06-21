@@ -19,9 +19,9 @@
     <title>Auroville Portal</title>
   </head>
   <body>
-  <header class="navbar navbar-expand flex-column-md flex-md-row bd-navbar p-0 sticky-top bg-white">
+  <header class="navbar navbar-expand bd-navbar p-0 bg-white">
         <div id="toggler" class="toggler">
-            <i class="fa fa-bars"></i>
+            <div class="putincenter"><i class="fa fa-bars"></i></div>
         </div>
         <a class="navbar-brand mr-0 mr-md-2 p-0" href="/" aria-label="Bootstrap"><img src="http://www.agpworkshops.com/img/auroville-green-practices-logo.svg"></a>
         <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -47,8 +47,8 @@
         </div>
   </header>
   <div class="container-fluid">
-    <div class="row">
-        <div id="sidebar" class="bd-sidebar p-0 m-close col-3 border-right">
+    <div>
+        <div id="sidebar" class="bd-sidebar border-right">
             <nav class="bd-links" id="bd-docs-nav">
                 <div class="bd-toc-item active">
                   <a class="bd-toc-link" href="#"><i class="fas fa-hourglass-start"></i> <span>Getting started</span></a>
@@ -67,7 +67,7 @@
                 </div>
             </nav>
         </div>
-        <main class="p-2 bd-content col-9">
+        <main class="p-2 bd-content">
            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -80,7 +80,7 @@
     </div>
   </div>
   <!--footer-->
-  <footer class="navbar-light bg-light border-top p-2">
+  <footer class="navbar-light bg-light border-top bd-footer p-2">
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link" href="#">Travel/Stay</a>
@@ -122,13 +122,14 @@
              <script>   
                 $(document).ready(function(){
                     $("#toggler").click(function(){
-                        $("#sidebar").toggleClass("transformX");
-                        $("#sidebar").toggleClass("m-open m-close");
+                        $("body").toggleClass("slide-out");
+                        $("#sidebar").toggleClass("");
                         $("#toggler i").toggleClass("fa-arrow-right fa-bars");
-                        $(".bd-toc-item span").toggleClass("d-none");
+                        $(".bd-toc-item span").toggleClass("");
 
                     });
                 });
+
             </script>    
   </body>
   </html>
