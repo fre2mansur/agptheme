@@ -1,21 +1,21 @@
-@media screen and (max-width: 576px) {
-.sticky-top-xs {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	z-index: 1020;
+@media screen and (min-width: 576px) {
+	.bd-sidebar{
+		left: -60vw;
+		z-index: 1;
+		overflow: hidden;
+		transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+	}
+	.slide-out .bd-sidebar{
+		
+		width: auto;
+		left: 0;
+		z-index: 1;
+		overflow: hidden;
+		background-color: white;
+		transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+	}
+	.bd-content{
+		width: 100%;
+		left: 0;
+	}
 }
-.navbar-brand img {
-	width: 60vw;
-}
-.bd-content {
-    flex-basis: auto;
- }
-.m-close {
-	display: none;
-	
-}
-.m-open {
-	display: block;
-}
-}/* /540 */

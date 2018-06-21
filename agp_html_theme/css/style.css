@@ -13,30 +13,49 @@ footer a:hover {
 header{
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
+.bd-navbar{
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 70px;
+    z-index: 2;
+}
+.container-fluid{
+    position: relative;
+    top:70px;
+}
 .bd-sidebar {
-   
-    position: -webkit-sticky;
-    position: sticky;
-    top: 4rem;
-    z-index: 1000;
-    height: calc(100vh - 4rem);
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    height:100vh;
     -ms-flex-order: 0;
     order: 0;
-   
     transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
     flex-basis: 20vw;
+    width: 15vw;
+    box-sizing: border-box;     
 }
 .bd-content{
-    flex-basis: 80vw;
+    left: 15vw;
+    width: 85%;
+    position: relative;
     transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
-    max-width: 79%;
+    height: 100vh;
 }
-.transformX{
-    flex-basis: 0vw;
+.slide-out .bd-sidebar{
+    width: 0;
+    left: -20vw;
+    overflow: hidden;
     transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
+}
+.slide-out .bd-content{
+    width: 100%;
+    left: 0;
 }
 .fa-arrow-right{
-    transform: rotateZ(-180deg);
+    transform: rotateZ(180deg)  ;
     transition: all .25s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
 }
 
@@ -47,13 +66,20 @@ header{
     width: 20vw;
 }
 .toggler {
+    position: relative;
     background: #99cb50;
-    padding: 15px !important;
-    width: 50px;
+    height: 100%;
+    width: 62px;
     margin-right: 10px;
 }
 .toggler i {
     color:#fff;
+}
+.putincenter{
+    transform: translate(-50%, -50%);
+    left: 48%;
+    top: 50%;
+    position: absolute;
 }
 .top-search .btn {
     background-color: #99cb50 !important;
@@ -85,7 +111,11 @@ header{
     padding: 0 8px;
     font-size: 20px;
 }
-
+.bd-footer{
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+}
 span{
     transition: all .5s ease;
 }
