@@ -14,17 +14,14 @@ header{
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .bd-navbar{
-    position: fixed !important;
+   
     width: 100%;
     left: 0;
     top: 0;
     height: 60px;
     z-index: 2;
 }
-.container-fluid{
-    position: relative;
-    top:60px;
-}
+
 .bd-sidebar {
     position: fixed;
     left: 0;
@@ -34,15 +31,16 @@ header{
     order: 0;
     transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
     flex-basis: 20vw;
-    width: 15vw;
+    width: 21vw;
     box-sizing: border-box;     
 }
 .bd-content{
-    left: 15vw;
-    width: 85%;
+    left: 20vw;
+    width: 80%;
     position: relative;
     transition:all .5s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
     height: 100vh;
+    padding: 15px;
 }
 .slide-out .bd-sidebar{
     width: 0;
@@ -121,4 +119,34 @@ span{
     transition: all .5s ease;
 }
 
-    
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #5d5a5a;
+    font-size: 20px;
+}
+.card {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+.card-img-top {
+    border-radius: 0;
+}
+.date {
+    top: 10px;
+    position: absolute;
+    background: #99cb50;
+    color: #fff;
+    padding: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 75px;
+    text-align: center;
+}
+h5.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #603813;
+    font-size: 15px;
+}

@@ -1,4 +1,11 @@
 @media screen and (max-width: 576px) {
+	.container-fluid{
+	    position: relative;
+	    top:60px;
+	}
+	.bd-navbar{
+		 position: fixed !important;
+	}
 	.bd-sidebar{
 		left: -60vw;
 		z-index: 1;
@@ -17,5 +24,8 @@
 	.bd-content{
 		width: 100%;
 		left: 0;
+	}
+	.navbar-brand img {
+   		width: 70vw;
 	}
 }
