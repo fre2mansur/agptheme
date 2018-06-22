@@ -18,12 +18,12 @@ header{
     width: 100%;
     left: 0;
     top: 0;
-    height: 70px;
+    height: 60px;
     z-index: 2;
 }
 .container-fluid{
     position: relative;
-    top:70px;
+    top:60px;
 }
 .bd-sidebar {
     position: fixed;
@@ -67,13 +67,12 @@ header{
 }
 .toggler {
     position: relative;
-    background: #99cb50;
     height: 100%;
     width: 62px;
     margin-right: 10px;
 }
 .toggler i {
-    color:#fff;
+    color:#505050;
 }
 .putincenter{
     transform: translate(-50%, -50%);
@@ -82,15 +81,17 @@ header{
     position: absolute;
 }
 .top-search .btn {
-    background-color: #99cb50 !important;
-    color: #fff;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #9acb505e;
+    color: #505050;
 }
 .top-search input {
    width: 170px !important;
    -webkit-transition: all .5s ease;
    -moz-transition: all .5s ease;
    transition: all .5s ease;
-   border: 1px solid #eeeeee;
+   border: 0;
+   border-bottom: 1px solid #9acb505e;
 }
 .form-control:focus {
     box-shadow: none;
@@ -98,19 +99,19 @@ header{
 }
 .top-search input:focus {
    width: 300px !important;
-   border: 1px solid #99cb50;
+   border-bottom: 1px solid #9acb505e !important;
 }
 .bd-toc-item {
-    padding: 10px 4px;
+    padding: 10px 5%;
 }
 .bd-toc-item:hover {
     background: #eee;
 }
 .bd-toc-item i {
-    color: var(--gray);
-    padding: 0 8px;
-    font-size: 20px;
+    display: none;
 }
+.bd-links{position: relative;}
+
 .bd-footer{
     position: relative;
     bottom: 0;
